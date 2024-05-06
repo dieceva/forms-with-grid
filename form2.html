@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./form2.css">
     <title>Grid in Forms Assignment</title>
 </head>
 
@@ -22,24 +22,37 @@
     </header>
 
     <div id="form-box">
+        <h2>Contact Us</h2>
         <form id="contact-form" action="/submit-path" method="post">
-            <h2>Connect With Our Team</h2>
-            <h3>Fill the form so that our team can reach out to you</h3>
             <div id="name-field">
                 <label for="name-input"></label>
-                <input type="text" id="name-input" name="name" required placeholder="Name">
+                <input type="text" id="name-input" name="name" required placeholder="Full Name">
             </div>
-
+            <div id="contact">
+                <h3>Contact</h3>
+                <p>hi@green.com</p>
+            </div>
             <div id="email-field">
                 <label for="email-input"></label>
-                <input type="email" id="email-input" name="email" required placeholder="Email">
+                <input type="email" id="email-input" name="email" required placeholder="E-mail">
             </div>
-
-            <div id="phone-field">
-                <label for="phone-input"></label>
+            <div id="based">
+                <h3>Contact</h3>
+                <p>New York</p>
+                <p>California, Ohio</p>
+            </div>
+            <!-- <div id="phone-field">
+                <label for="phone-input">Phone:</label>
                 <input type="tel" id="phone-input" name="phone" placeholder="Phone Number">
+            </div> -->
+            
+            <div id="message-field">
+                <label for="message-area"></label>
+                <textarea id="message-area" name="message" placeholder="Message"></textarea>
             </div>
-
+            <div class="empty-space"></div>
+            
+            
             <!-- <div id="dropdown-field">
             <label for="reason-select">Reason:</label>
             <select id="reason-select" name="reason">
@@ -49,12 +62,6 @@
                 <option value="job">I want a job</option>
             </select>
         </div>
-
-        <div id="message-field">
-            <label for="message-area">Message:</label>
-            <textarea id="message-area" name="message"></textarea>
-        </div>
-
         <div id="checkbox1-field">
             <label for="checkbox1-input">Checkbox 1:</label>
             <input type="checkbox" id="checkbox1-input" name="checkbox1">
@@ -90,12 +97,15 @@
             <!-- <button id="submit-2" type="submit" name="action" value="save">Submit & Save</button>
         <button id="submit-3" type="submit" name="action" value="publish">Submit & Publish</button> -->
         </form>
-        <button id="submit-4" type="submit" form="contact-form">Submit</button>
     </div>
     <!-- Submit Button outside Form -->
-
-
-
+    <button id="submit-4" type="submit" form="contact-form">Contact Us</button>
+    <img src="./img/agenda.jpg" alt="cellphone agenda">
+    <div>
+        <img class="icons" src="./img/icon1.png" alt="icon1">
+        <img class="icons" src="./img/icon2.png" alt="icon2">
+        <img class="icons" src="./img/icon3.png" alt="icon3">
+    </div>
     <footer>
         <p>Diego Cevallos - 2024</p>
     </footer>

@@ -1,0 +1,186 @@
+/* Reset Browser Defaults */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+ul  {
+    background-color: rgb(232, 232, 232);
+    padding-bottom: 10px;
+    margin-top: 5px;
+    width: 100%;
+}
+/* General */
+body {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
+button  {
+    margin-bottom: 10px;
+    align-items: center;
+    margin-right: 275px;
+    color: blue;
+    font-weight: 200;
+    width: 100px;
+    height: 30px;
+}
+/* Header */
+header {
+    margin-bottom: 8px;
+    padding: 16px;
+    background-color:  rgba(20, 20, 130, 0.832);
+    color: white;
+}
+#form-box   {
+    margin-left: 500px;
+    color: white;
+    margin-top: 80px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    border-color: black;
+    border-style: dashed;
+    width: 30%;
+    background-color: rgba(33, 33, 234, 0.832);
+    box-shadow: 0cap;
+}
+/* Contact Form Area (Grid) */
+#contact-form {
+    display: grid;
+    grid-template-areas:
+        'h2 h2'
+        'h3 h3'
+        'name email'
+        'phone phone';
+    grid-gap: 20px;
+    margin-left: 40px;
+    margin: 8px;
+    padding: 16px;
+}
+
+/* Form Heading */
+#contact-form h2 {
+    grid-area: h2;
+}
+#contact-form h3 {
+    grid-area: h3;
+}
+
+/* Form Elements (General) */
+#contact-form label,
+#contact-form input,
+#contact-form select,
+#contact-form textarea,
+#contact-form button {
+    margin: 4px;
+    padding: 3px;
+    display: block;
+    width: 100%;
+}
+
+#contact-form label {
+    text-align: left;
+}
+
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form select,
+#contact-form textarea {
+    margin-bottom: 10px;
+}
+
+/* Grid Items / Cells */
+#name-field {
+    grid-area: name;
+    
+}
+
+
+#email-field {
+    grid-area: email;
+    
+}
+
+#phone-field {
+    grid-area: phone;
+         
+}
+
+#dropdown-field {
+    grid-area: reason;
+}
+
+#message-field {
+    grid-area: message;
+}
+
+#checkbox1-field {
+    grid-area: checkbox1;
+    /* display: flex; */
+}
+
+#checkbox2-field {
+    grid-area: checkbox2;
+}
+
+#radio1-field {
+    grid-area: radio1;
+}
+
+#radio1-field {
+    grid-area: radio2;
+}
+
+#file-field {
+    grid-area: file;
+}
+
+#submit-1 {
+    grid-area: submit1;
+}
+
+#submit-2 {
+    grid-area: submit2;
+}
+
+#submit-3 {
+    grid-area: submit3;
+}
+
+#submit-4 {
+    grid-area: submit4;
+}
+
+#checkbox1-field label,
+#checkbox1-field input,
+#checkbox2-field label,
+#checkbox2-field input,
+#radio1-field label,
+#radio1-field input,
+#radio2-field label,
+#radio2-field input  {
+    display: inline-block;
+    width: auto;
+}
+
+/* Footer */
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    background-color:  rgba(20, 20, 130, 0.832);
+    color: white;
+}
