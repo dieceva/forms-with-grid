@@ -23,31 +23,57 @@
 
     <div id="form-box">
         <form id="contact-form" action="/submit-path" method="post">
-            <h2>Connect With Our Team</h2>
-            <h3>Fill the form so that our team can reach out to you</h3>
-            <div id="name-field">
+            <h3>Job Application (Web)</h3>
+            <div id="first-name">
                 <label for="name-input">Name:</label>
-                <input type="text" id="name-input" name="name" required placeholder="Name">
+                <input type="text" id="name-input" name="first" required placeholder="Enter first name">
+            </div>
+            <div id="last-name">
+                <label for="name-input">Name:</label>
+                <input type="text" id="name-input" name="last" required placeholder="Enter last name">
             </div>
 
             <div id="email-field">
                 <label for="email-input">Email:</label>
-                <input type="email" id="email-input" name="email" required placeholder="Email">
+                <input type="email" id="email-input" name="email" required placeholder="Enter email">
             </div>
+            <div id="city-field">
+                <label for="city-input">City</label>
+                <input type="text" id="city-input" name="city" required placeholder="Enter city">
+            </div>
+            <div id="zip-field">
+                <label for="name-input">Zip</label>
+                <input type="text" id="zip-input" name="zip" required placeholder="Enter Zip code">
+            </div>
+            <div id="address-field">
+                <label for="address-input">Enter address</label>
+                <input type="text" id="address-input" name="address" required>
+            </div>
+            <div id="start">
+                <label for="start">Start Date</label>
+                <input type="text" id="start-input" name="address" required>
+            </div>
+            <div id="file-field">
+                <label for="file-input">File:</label>
+                <input type="file" id="file-input" name="file">
+            </div>
+           
 
-            <div id="phone-field">
+            <div id="dropdown-field">
+            <label for="reason-select">Job Role</label>
+            <select id="reason-select" name="reason">
+                <option value="frontend">Frontend developer</option>
+                <option value="backend">Backend developer</option>
+                <option value="fullstack">Fullstack developer</option>
+            </select>
+            </div>
+        </form>
+        <button id="submit-4" type="submit" form="contact-form">Apply Now</button>
+    </div>
+       <!-- <div id="phone-field">
                 <label for="phone-input">Phone:</label>
                 <input type="tel" id="phone-input" name="phone" placeholder="Phone Number">
-            </div>
-
-            <!-- <div id="dropdown-field">
-            <label for="reason-select">Reason:</label>
-            <select id="reason-select" name="reason">
-                <option value="">--Please choose an option--</option>
-                <option value="inquiry">I have a question</option>
-                <option value="problem">I have a problem</option>
-                <option value="job">I want a job</option>
-            </select>
+            </div> 
         </div>
 
         <div id="message-field">
@@ -89,9 +115,7 @@
             <!-- Submit Buttons with added values, useful for identifying which button was clicked in a form with multiple submit buttons -->
             <!-- <button id="submit-2" type="submit" name="action" value="save">Submit & Save</button>
         <button id="submit-3" type="submit" name="action" value="publish">Submit & Publish</button> -->
-        </form>
-        <button id="submit-4" type="submit" form="contact-form">Submit</button>
-    </div>
+        
     <!-- Submit Button outside Form -->
 
 

@@ -23,35 +23,50 @@ body {
     font-family: Helvetica, sans-serif;
     text-align: center;
 }
+h3 {
+    margin-left: -385px;
+}
 button  {
+    
+    display: block;
+    margin-left: 420px;
+    margin-top: -20px;
     margin-bottom: 10px;
-    margin-left: -535px;
+    height: 40px;
+    width: 100px;
+    background-color: rgb(102, 102, 232);
+    border: none;
+    color: white;
+    cursor: pointer;
 }
 /* Header */
 header {
     margin-bottom: 8px;
     padding: 16px;
-    background-color: #952a2a;
-    color: white;
+    background-color: #a3a0a0;
+    color: black;
 }
 #form-box   {
     margin-left: 400px;
     margin-right: 400px;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 10px;
     border-color: black;
     border-style: dashed;
+   
 }
 /* Contact Form Area (Grid) */
 #contact-form {
     display: grid;
     grid-template-areas:
-        'h2 h2'
         'h3 h3'
-        'name email'
-        'phone phone';
-    grid-gap: 20px;
-    margin-left: 40px;
+        'first last'
+        'email job'
+        'address address'
+        'city zip'
+        'start file';
+    grid-gap: 10px;
+    margin-left: 20px;
     margin: 8px;
     padding: 16px;
 }
@@ -62,16 +77,18 @@ header {
 }
 #contact-form h3 {
     grid-area: h3;
+    
 }
 
 /* Form Elements (General) */
 #contact-form label,
 #contact-form input,
 #contact-form select,
-#contact-form textarea,
-#contact-form button {
+#contact-form textarea{
     margin: 4px;
     padding: 3px;
+    margin-top: 0px;
+    margin-bottom: 1px;
     display: block;
     width: 100%;
 }
@@ -88,11 +105,14 @@ header {
     margin-bottom: 10px;
 }
 
-/* Grid Items / Cells */
-#name-field {
-    grid-area: name;
-}
 
+/* Grid Items / Cells */
+#first-name {
+    grid-area: first;
+}
+#last-name {
+    grid-area: last;
+}
 #email-field {
     grid-area: email;
 }
@@ -100,11 +120,25 @@ header {
 #phone-field {
     grid-area: phone;
 }
-
-#dropdown-field {
-    grid-area: reason;
+#start {
+    grid-area: start;
 }
 
+#dropdown-field {
+    grid-area: job;
+}
+#file-field {
+    grid-area: file;
+}
+#zip-field {
+    grid-area: zip;
+}
+#address-field {
+    grid-area: address;
+}
+#city-field {
+    grid-area: city;
+}
 #message-field {
     grid-area: message;
 }
@@ -126,24 +160,9 @@ header {
     grid-area: radio2;
 }
 
-#file-field {
-    grid-area: file;
-}
-
-#submit-1 {
-    grid-area: submit1;
-}
-
-#submit-2 {
-    grid-area: submit2;
-}
-
-#submit-3 {
-    grid-area: submit3;
-}
 
 #submit-4 {
-    grid-area: submit4;
+    grid-area: button;
 }
 
 #checkbox1-field label,
@@ -166,6 +185,6 @@ footer {
     text-align: center;
     padding: 20px;
     position: fixed;
-    background-color: #952a2a;
-    color: white;
+    background-color: #a3a0a0;
+    color: black;
 }
